@@ -4,7 +4,7 @@ const Pricing = () => {
   return (
     <div className="container my-5">
       <div className="row">
-        <div className="col-12 col-lg-4">
+        <div className="col-12 col-lg-4 mb-5 mb-lg-0">
           <h2 className="mb-3">Unbeatable pricing</h2>
           <p>
             We pioneered the concept of discount broking and price transparency

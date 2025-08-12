@@ -10,10 +10,7 @@ const Hero = () => {
           Online platform to invest in stocks, derivatives, mutual funds and
           more
         </p>
-        <button
-          className="btn btn-primary fs-5 mx-auto p-2"
-          style={{ width: "20%" }}
-        >
+        <button className="btn btn-primary fs-5 mx-auto p-2 w-lg-25 w-25 ">
           Signup Now
         </button>
       </div>
