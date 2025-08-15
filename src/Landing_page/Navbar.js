@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-white border-bottom">
-      <div class="container">
-        <a class="navbar-brand w-25" href="#">
+    <nav className="navbar navbar-expand-lg bg-white border-bottom">
+      <div className="container">
+        <Link className="navbar-brand w-25" to="/">
           <img className="w-75" src="media/images/logo.svg" alt="LOGO" />
-        </a>
+        </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -16,34 +17,38 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/signup"
+              >
                 Signup
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">
                 About
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">
+            <li className="nav-item">
+              <Link className="nav-link" aria-disabled="true" to="/products">
                 Products
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">
+            <li className="nav-item">
+              <Link className="nav-link" aria-disabled="true" to="/pricing">
                 Pricing
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">
+            <li className="nav-item">
+              <Link className="nav-link" aria-disabled="true" to="/support">
                 Support
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
