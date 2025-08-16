@@ -1,10 +1,13 @@
 import React from "react";
+import Hero from "./Hero";
+import Team from "./Team";
 
 const AboutPage = () => {
   return (
-    <>
-      <h1>About Us</h1>
-    </>
+    <div className="about">
+      <Hero />
+      <Team />
+    </div>
   );
 };
 

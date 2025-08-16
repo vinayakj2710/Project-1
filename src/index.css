@@ -7,6 +7,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a{
+  text-decoration: none;
+}
+
+.circle{
+  border-radius: 50%;
+}
+
+.about p{
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
